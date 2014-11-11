@@ -1,0 +1,17 @@
+A device with a microcontroller: Sonos Play:3 wireless speaker.
+
+I found a 'teardown' site listing the components: http://ifixit.org/blog/4299/sonos-play3-teardown/
+* MPC8314VRADDA low-power PowerQUICC II pro 266 MHz processor
+* STMicroelectronics NAND 512W3A2SN6
+* Nanya NT5TU32M16DG-3C 512 Mb DDR2 RAM
+* STMicroelectronics STA339BW 2.1-channel high-efficiency digital audio system
+* Maxim 78Q2123 10/100 fast ethernet MicroPHY
+* Han Run HY601680 10/100Base-T transformer module
+* Texas Instruments TPS54226 4.5V to 18V input, 2 A synchronous step-down SWIFT converter
+
+The CPU is a Freescale Power CPU. Freescale was formerly Motorolla's semiconductor division, so this is a relative of the PowerPC chips found in Macintoshes for many years. Apparently the PowerUICC II pro were based off the venerable PowerPC 603e, the processor in the BeBox and many Macs. Datasheets are here: http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MPC8314E&fr=g
+Digikey has them for about $30.
+I found a port of uboot to the platform: https://github.com/intdes/u-boot-MPC8314
+
+
+Nothing else on the list was particularly interesting. The flash & RAM are fairly boring. The flash part is selling on AliExpress for $2.70, the ram part for $2.35. The ST audio part is a codec and amp costing about $6 in single parts, half as much in bulk.
